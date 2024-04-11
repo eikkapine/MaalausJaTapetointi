@@ -1,0 +1,378 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+* {
+  font-family: Montserrat;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapper{
+	background-color: #fff;
+}
+.about-us-text{
+padding-left: 25px;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  background: rgb(255, 165, 165);
+  color: #222;
+}
+h1,h2,h3,h4,h5,h6,  {
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #484848;
+  margin: 30px 0 25px 0;
+  line-height: 1.3;
+}
+p{
+	text-align: left;
+}
+.tekstijoku{
+	font-size: 34px;
+}
+#teksti2{
+	text-align: left;
+}
+a {
+  color: #ff9697;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: #fff;
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+
+img {
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.top h1 a {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+input {
+  padding: 10px;
+  border: 0;
+}
+
+section, footer {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  font-weight: 100;
+}
+
+form {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+footer {
+  border-top: 1px solid #e2e2e2;
+}
+
+.flex-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+}
+
+.flex-nav li {
+  -webkit-box-flex: 3;
+  flex: 3;
+}
+
+.flex-nav li a {
+  color: #8b8b8b;
+}
+
+.flex-nav li a:hover, .flex-nav li a:focus {
+  color: #222;
+}
+
+.flex-nav .social {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+
+.gallery ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  -webkit-box-flex: 1;
+  flex: 1 1 50%;
+  padding: 12px;
+}
+
+input {
+  padding: 0.75em 2em;
+  font-size: 1rem;
+}
+
+input[type=text], input[type=email] {
+  border: 1px solid #e2e2e2;
+}
+
+input[type=submit] {
+  background: #222;
+  border: 1px solid #222;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+  
+  .wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  .wrapper > * {
+    -webkit-box-ordinal-group: 100;
+    order: 99;
+  }
+  
+  .top {
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+  }
+
+  .details {
+    -webkit-box-ordinal-group: 4;
+    order: 3;
+  }
+}
+/*google kartta*/
+.map {
+  height: 450px;
+}
+
+.map-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.map-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+}
+
+/*karuselli*/
+
+.carousel {
+  margin-top: 50px;
+}
+.carousel h1 {
+  text-align: center;
+  font-size: 36px;
+}
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  margin-top: 20px;
+}
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  scroll-snap-align: center;
+  margin-right: 20px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    flex-wrap: nowrap;
+  }
+  .carousel-item {
+    height: 200px;
+  }
+}
+.svg-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.svg-container svg {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+
+
+#Fiesta {
+  background: #dd4132;
+}
+
+#JesterRed {
+  background: #9e1030;
+}
+
+#Turmeric {
+  background: #fe840e;
+}
+
+#LivingCoral {
+  background: #ff6f61;
+}
+
+#PinkPeacock {
+  background: #c62168;
+}
+
+#PepperStem {
+  background: #8d9440;
+}
+
+#AspenGold {
+  background: #ffd662;
+}
+
+#PrincessBlue {
+  background: #00539c;
+}
+
+#Toffee {
+  background: #755139;
+}
+
+#MangoMojito {
+  background: #d69c2f;
+}
+
+#TerrariumMoss {
+  background: #616247;
+}
+
+#SweetLilac {
+  background: #e8b5ce;
+}
+
+#Soybean {
+  background: #d2c29d;
+}
+
+#Eclipse {
+  background: #343148;
+}
+
+#SweetCorn {
+  background: #f0ead6;
+}
+
+#BrownGranite {
+  background: #615550;
+}
+
+#nollaa {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 440px;
+  margin-right: 440px;
+}
+#nappiContainer {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.nappivalikko {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#button-addon2:hover {
+  color: green;
+} 
+
+.button {
+  background-color: white;
+  border: solid black;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+}
+
+.button2 {
+  background-color: yellow;
+  border-radius: 6px;
+}
+#varitestaus{
+display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
